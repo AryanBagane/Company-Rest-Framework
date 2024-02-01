@@ -30,7 +30,7 @@ class Employee(models.Model):
     company = models.ForeignKey(Company, on_delete = models.CASCADE)
 
     class Meta:
-        ordering = ['name']
+        ordering = ['id']
 
     def __str__(self):
         return self.name
