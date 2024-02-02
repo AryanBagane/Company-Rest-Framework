@@ -23,3 +23,12 @@ urlpatterns = [
     path('home/', home_page),
     path('api/v1/',include('api.urls'))
 ]
+
+#Modify Site Header
+admin.site.site_header = 'Aryan Site Administration'
+#Modify Site Title
+admin.site.site_title = 'Aryan Site'
+#Modify Site Index Title
+admin.site.index_title = 'Aryan Site Administration'
+#Modify Site URL
+admin.site.site_url= '/admin'
